@@ -1,0 +1,693 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "6301f8a8c85be6b765761729d6b3d1d0",
+    "packages": [
+        {
+            "name": "acquia/acquia-sdk-php",
+            "version": "0.10.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acquia/acquia-sdk-php.git",
+                "reference": "9129fe6c92fefeb3209f83860f09ec0183005bb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acquia/acquia-sdk-php/zipball/9129fe6c92fefeb3209f83860f09ec0183005bb1",
+                "reference": "9129fe6c92fefeb3209f83860f09ec0183005bb1",
+                "shasum": ""
+            },
+            "require": {
+                "cpliakas/psolr": ">=0.4",
+                "guzzle/service": "~3.0",
+                "lstrojny/fxmlrpc": ">=0.8,<0.9",
+                "pear-pear.php.net/net_dns2": "1.3.2",
+                "php": ">=5.3.0",
+                "symfony/filesystem": "~2.0"
+            },
+            "replace": {
+                "acquia/acquia-sdk-php-cloud-api": "self.version",
+                "acquia/acquia-sdk-php-cloud-db": "self.version",
+                "acquia/acquia-sdk-php-cloud-env": "self.version",
+                "acquia/acquia-sdk-php-cloud-memcache": "self.version",
+                "acquia/acquia-sdk-php-common": "self.version",
+                "acquia/acquia-sdk-php-env": "self.version",
+                "acquia/acquia-sdk-php-json": "self.version",
+                "acquia/acquia-sdk-php-network": "self.version",
+                "acquia/acquia-sdk-php-rest": "self.version",
+                "acquia/acquia-sdk-php-search": "self.version"
+            },
+            "require-dev": {
+                "guzzle/plugin-mock": "~3.0",
+                "pdepend/pdepend": "~1.0",
+                "phploc/phploc": "~2.0",
+                "phpmd/phpmd": "~1.0",
+                "phpunit/phpunit": "~3.0",
+                "satooshi/php-coveralls": "*",
+                "scrutinizer/ocular": "~1.0",
+                "sebastian/phpcpd": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Acquia": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://github.com/acquia/acquia-sdk-php/graphs/contributors"
+                }
+            ],
+            "description": "The Acquia SDK for PHP allows developers to build applications on top of Acquia services.",
+            "homepage": "https://github.com/acquia/acquia-sdk-php",
+            "keywords": [
+                "acquia"
+            ],
+            "time": "2015-03-10 14:41:58"
+        },
+        {
+            "name": "cpliakas/psolr",
+            "version": "0.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cpliakas/psolr.git",
+                "reference": "b3dff7658c88f5c56d6012c170faf215acf3c698"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cpliakas/psolr/zipball/b3dff7658c88f5c56d6012c170faf215acf3c698",
+                "reference": "b3dff7658c88f5c56d6012c170faf215acf3c698",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/service": "~3.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "pdepend/pdepend": "~1.0",
+                "phploc/phploc": "~2.0",
+                "phpunit/phpunit": "~3.0",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PSolr": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Pliakas",
+                    "email": "opensource@chrispliakas.com",
+                    "role": "Project lead"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://github.com/cpliakas/psolr/graphs/contributors"
+                }
+            ],
+            "description": "A PHP client for Apache Solr.",
+            "homepage": "https://github.com/cpliakas/psolr",
+            "keywords": [
+                "solr"
+            ],
+            "time": "2014-02-18 12:53:55"
+        },
+        {
+            "name": "guzzle/cache",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Cache",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Guzzle3/cache.git",
+                "reference": "9d20d5afd4203f84893e809777ffa01e47bd4ea7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Guzzle3/cache/zipball/9d20d5afd4203f84893e809777ffa01e47bd4ea7",
+                "reference": "9d20d5afd4203f84893e809777ffa01e47bd4ea7",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/common": "self.version",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Cache": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle cache adapter component",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "adapter",
+                "cache",
+                "doctrine",
+                "zf"
+            ],
+            "abandoned": "guzzle/guzzle",
+            "time": "2014-01-08 21:24:51"
+        },
+        {
+            "name": "guzzle/common",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Common",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Guzzle3/common.git",
+                "reference": "2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Guzzle3/common/zipball/2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc",
+                "reference": "2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/event-dispatcher": ">=2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Common": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Common libraries used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "collection",
+                "common",
+                "event",
+                "exception"
+            ],
+            "abandoned": "guzzle/guzzle",
+            "time": "2014-08-11 04:32:36"
+        },
+        {
+            "name": "guzzle/http",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Http",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Guzzle3/http.git",
+                "reference": "1e8dd1e2ba9dc42332396f39fbfab950b2301dc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Guzzle3/http/zipball/1e8dd1e2ba9dc42332396f39fbfab950b2301dc5",
+                "reference": "1e8dd1e2ba9dc42332396f39fbfab950b2301dc5",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/common": "self.version",
+                "guzzle/parser": "self.version",
+                "guzzle/stream": "self.version",
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Http": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "HTTP libraries used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "client",
+                "curl",
+                "http",
+                "http client"
+            ],
+            "abandoned": "guzzle/guzzle",
+            "time": "2014-08-11 04:32:36"
+        },
+        {
+            "name": "guzzle/inflection",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Inflection",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Guzzle3/inflection.git",
+                "reference": "c3ee7d90d0674d94834b843115d07c58570fc2e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Guzzle3/inflection/zipball/c3ee7d90d0674d94834b843115d07c58570fc2e4",
+                "reference": "c3ee7d90d0674d94834b843115d07c58570fc2e4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Inflection": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle inflection component",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "inflection"
+            ],
+            "abandoned": "guzzle/guzzle",
+            "time": "2013-06-11 00:24:07"
+        },
+        {
+            "name": "guzzle/parser",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Parser",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Guzzle3/parser.git",
+                "reference": "6874d171318a8e93eb6d224cf85e4678490b625c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Guzzle3/parser/zipball/6874d171318a8e93eb6d224cf85e4678490b625c",
+                "reference": "6874d171318a8e93eb6d224cf85e4678490b625c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Parser": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Interchangeable parsers used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "URI Template",
+                "cookie",
+                "http",
+                "message",
+                "url"
+            ],
+            "abandoned": "guzzle/guzzle",
+            "time": "2014-02-05 18:29:46"
+        },
+        {
+            "name": "guzzle/service",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Service",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Guzzle3/service.git",
+                "reference": "583c623473b45cc3dd607ab19d9629a0a4fbb762"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Guzzle3/service/zipball/583c623473b45cc3dd607ab19d9629a0a4fbb762",
+                "reference": "583c623473b45cc3dd607ab19d9629a0a4fbb762",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/cache": "self.version",
+                "guzzle/http": "self.version",
+                "guzzle/inflection": "self.version",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Service": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle service component for abstracting RESTful web services",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "rest",
+                "web service",
+                "webservice"
+            ],
+            "abandoned": "guzzle/guzzle",
+            "time": "2014-04-23 20:54:52"
+        },
+        {
+            "name": "guzzle/stream",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Stream",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Guzzle3/stream.git",
+                "reference": "60c7fed02e98d2c518dae8f97874c8f4622100f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Guzzle3/stream/zipball/60c7fed02e98d2c518dae8f97874c8f4622100f0",
+                "reference": "60c7fed02e98d2c518dae8f97874c8f4622100f0",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/common": "self.version",
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "guzzle/http": "To convert Guzzle request objects to PHP streams"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Stream": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle stream wrapper component",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "component",
+                "stream"
+            ],
+            "abandoned": "guzzle/guzzle",
+            "time": "2014-05-01 21:36:02"
+        },
+        {
+            "name": "lstrojny/fxmlrpc",
+            "version": "0.8.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lstrojny/fxmlrpc.git",
+                "reference": "7b9756f5f98102be170bc798781da2eef78ab977"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lstrojny/fxmlrpc/zipball/7b9756f5f98102be170bc798781da2eef78ab977",
+                "reference": "7b9756f5f98102be170bc798781da2eef78ab977",
+                "shasum": ""
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "guzzle/guzzle": "*",
+                "kriswallsmith/buzz": "*",
+                "monolog/monolog": "*",
+                "php": ">=5.3.0",
+                "phpunit/phpunit": "3.*",
+                "psr/log": "*",
+                "zendframework/zend-http": "2.0.*",
+                "zendframework/zend-log": "2.0.*",
+                "zendframework/zendframework1": "1.*"
+            },
+            "suggest": {
+                "ext-http": "Use ext/http as HTTP client",
+                "guzzle/guzzle": "To integrate Guzzle as HTTP client",
+                "kriswallsmith/buzz": "To integrate Buzz as HTTP client",
+                "monolog/monolog": "To integrate monolog as logger",
+                "zendframework/zend-http": "To use ZF2 Zend\\Http\\Client as HTTP client",
+                "zendframework/zend-log": "To use ZF2 Zend\\Log\\Logger as a logger",
+                "zendframework/zendframework1": "To use ZF1 Zend_Http_Client as HTTP client"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "fXmlRpc": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Strojny",
+                    "email": "lstrojny@php.net",
+                    "homepage": "http://usrportage.de"
+                }
+            ],
+            "description": "Fast and tiny XML/RPC client with bridges for various HTTP clients",
+            "keywords": [
+                "api",
+                "performance",
+                "rpc",
+                "xml",
+                "xmlrpc"
+            ],
+            "time": "2013-10-04 23:29:35"
+        },
+        {
+            "name": "pear-pear.php.net/Net_DNS2",
+            "version": "1.3.2",
+            "dist": {
+                "type": "file",
+                "url": "http://pear.php.net/get/Net_DNS2-1.3.2.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "php": ">=5.1.2.0"
+            },
+            "replace": {
+                "pear-pear/net_dns2": "== 1.3.2.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "BSD License"
+            ],
+            "description": "Provides (roughly) the same functionality as Net_DNS, but using PHP5 objects, exceptions for error handling, better sockets support.\n\nThis release is (in most cases) 2x - 10x faster than Net_DNS, as well as includes more RR's (including DNSSEC RR's), and improved sockets and streams support."
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/EventDispatcher.git",
+                "reference": "687039686d0e923429ba6e958d0baa920cd5d458"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/687039686d0e923429ba6e958d0baa920cd5d458",
+                "reference": "687039686d0e923429ba6e958d0baa920cd5d458",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.0,>=2.0.5",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/expression-language": "~2.6",
+                "symfony/phpunit-bridge": "~2.7",
+                "symfony/stopwatch": "~2.3"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-05-02 15:21:08"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Filesystem.git",
+                "reference": "ae4551fd6d4d4f51f2e7390fbc902fbd67f3b7ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/ae4551fd6d4d4f51f2e7390fbc902fbd67f3b7ba",
+                "reference": "ae4551fd6d4d4f51f2e7390fbc902fbd67f3b7ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-05-15 13:33:16"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

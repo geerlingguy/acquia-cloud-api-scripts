@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "pear.php.net"
+        }
+    ],
+    "require": {
+        "acquia/acquia-sdk-php": "*"
+    }
+}
