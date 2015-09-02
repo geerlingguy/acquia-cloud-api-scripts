@@ -75,6 +75,9 @@ update_console('Deployment complete!');
 /**
  * Pause until a given task is completed.
  *
+ * This function handles Cloud API 503 errors, and will ignore up to five 503s
+ * before failing.
+ *
  * @param int $id
  *   The task ID.
  *
@@ -83,13 +86,25 @@ update_console('Deployment complete!');
  */
 function wait_for_task_to_complete($cloudapi, $site, $id = 0) {
   $task_complete = FALSE;
+  $cloud_api_failures = 0;
+
   while ($task_complete !== TRUE) {
-    $task_status = $cloudapi->task($site, $id);
-    if ($task_status->state() == 'done') {
-      $task_complete = TRUE;
-    }
-    else {
-      sleep(5);
+    try {
+      $task_status = $cloudapi->task($site, $id);
+      if ($task_status->state() == 'done') {
+        $task_complete = TRUE;
+      }
+      else {
+        sleep(5);
+      }
+    } catch (Guzzle\Http\Exception\ServerErrorResponseException $e) {
+      if ($e->getCode() == 503) {
+        $cloud_api_failures++;
+        if ($cloud_api_failures >= 5) {
+          update_console('Cloud API returned 5 or more 503s, indicating failure to complete.');
+          exit(1);
+        }
+      }
     }
   }
   return $task_complete;
