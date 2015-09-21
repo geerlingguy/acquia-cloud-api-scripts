@@ -69,6 +69,10 @@ if (wait_for_task_to_complete($cloudapi, $site, $code->id())) {
   update_console('...complete!');
 }
 
+// Get deployment log and print it.
+$task_status = $cloudapi->task($site, $code->id());
+update_console($task_status->logs());
+
 // Congratulations, it's all over!
 update_console('Deployment complete!');
 
